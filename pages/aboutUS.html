@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>DAVM</title>
+    <!-- Map -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="../css/aboutus.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/pages/aboutUS.html"
+          ><i class="fa-solid fa-school-flag"></i>
+        </a>
+        <a class="navbar-brand" href="#"><b>D.A.V.M.Richhi</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a class="navbar-brand" href="/index.html"
+              ><i class="fa-solid fa-school-flag"></i>
+            </a>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <b>DAVM</b>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <br />
+            <a class="nav-link" href="../index.html"><b>Home</b></a
+            ><br />
+            <a class="nav-link" href="./aboutUS.html"><b> About Us </b></a
+            ><br />
+            <a class="nav-link" href="./admission.html"><b> Admission</b></a
+            ><br />
+            <a class="nav-link" href="./policies.html"><b> Policies</b></a
+            ><br />
+            <a class="nav-link" href="./faqs.html"><b> FAQs</b></a
+            ><br />
+            <a class="nav-link" href="./project.html"><b> Project Ideas</b></a
+            ><br />
+            <a class="nav-link" href="./history.html"><b> History</b></a
+            ><br />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br /><br /><br /><br />
+    <h2>About Us</h2>
+
+    <div class="about-container">
+      <!-- Section 1 (Image on Left) -->
+      <div class="section image-left">
+        <img src="../images/stumain1.jpeg" alt="School Discipline" />
+        <div class="section-content">
+          <h3>Our Discipline</h3>
+          <p>
+            At Devi Annapurna Vidhya Mandir, discipline is the cornerstone of
+            our school’s values. We believe that a disciplined environment
+            fosters learning, growth, and respect. Our students are encouraged
+            to maintain high standards of behavior, punctuality, and
+            accountability both inside and outside the classroom.
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 2 (Image on Right) -->
+      <div class="section image-right">
+        <img src="../images/stuandtec2.jpeg" alt="School Culture" />
+        <div class="section-content">
+          <h3>Our School Culture</h3>
+          <p>
+            Our school culture is one of inclusivity, mutual respect, and
+            collaboration. Students from different backgrounds and cultures come
+            together to form a diverse and vibrant community. We celebrate
+            cultural differences while promoting unity, allowing students to
+            thrive academically and socially.
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 3 (Image on Left) -->
+      <div class="section image-left">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Academic Excellence"
+        />
+        <div class="section-content">
+          <h3>Academic Excellence</h3>
+          <p>
+            We are dedicated to academic excellence, ensuring that each student
+            is provided with the best possible education. Our faculty consists
+            of highly trained professionals who are passionate about teaching.
+            We strive to create an environment where students are motivated to
+            achieve their full potential.
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 4 (Image on Right) -->
+      <div class="section image-right">
+        <img src="../images/games3.jpeg" alt="Extracurricular Activities" />
+        <div class="section-content">
+          <h3>Extracurricular Activities</h3>
+          <p>
+            Beyond academics, we believe in nurturing the holistic development
+            of our students through extracurricular activities. From sports to
+            arts, music, and debates, our students are encouraged to explore
+            their interests and talents. These activities instill values of
+            teamwork, leadership, and creativity.
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 5 (Image on Left) -->
+      <div class="section image-left">
+        <img
+          src="https://via.placeholder.com/600x400"
+          alt="Community Engagement"
+        />
+        <div class="section-content">
+          <h3>Community Engagement</h3>
+          <p>
+            Our school actively engages with the community, promoting social
+            responsibility and civic engagement. Through community service
+            projects, students learn the value of giving back to society,
+            fostering a sense of empathy, and creating positive change in the
+            world around them.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="f-info">
+        <div class="f-info-socials">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="f-info-brand">Devi Annapurna Vidhya Mandir <br /></div>
+        <div class="f-info-link">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
